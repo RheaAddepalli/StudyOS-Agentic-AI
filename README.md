@@ -134,23 +134,6 @@ just relocate the same problem. [Neon](https://neon.tech) has a genuinely
 permanent free tier and is plain Postgres, so this was the straightforward
 choice: host compute on Render, host state on Neon.
 
-## Deploying
-
-- **Backend**: `studyos/render.yaml` configures a Render Web Service. Push
-  the `studyos` folder as its own repo, connect it in Render, and set the
-  `sync: false` env vars (`GROQ_API_KEY`, `DATABASE_URL` from Neon,
-  `ALLOWED_ORIGINS` — your frontend's URL once you have it) in the Render
-  dashboard.
-- **Frontend**: push `studyos-frontend` as its own repo. In Render: **New →
-  Static Site**, build command `npm install && npm run build`, publish
-  directory `dist`, env var `VITE_API_URL` set to your deployed backend's
-  URL. Static sites are genuinely free on Render, no expiry.
-- Order matters: deploy the backend first to get its URL, use that for the
-  frontend's `VITE_API_URL`, then come back and set the frontend's URL as
-  the backend's `ALLOWED_ORIGINS` — they reference each other.
-- **Don't forget**: without the correct `ALLOWED_ORIGINS`, the browser
-  blocks every request with a CORS error even though the backend itself is
-  running fine.
 
 ## Tests and evaluation — two different things
 
