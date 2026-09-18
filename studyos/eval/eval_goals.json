@@ -1,0 +1,10 @@
+[
+  {"id": "python-beginner", "raw_request": "I want to learn Python from scratch."},
+  {"id": "transformers-deep", "raw_request": "I want to learn Transformers from the fundamentals and eventually understand the Attention Is All You Need paper. I know Python and basic neural networks and can study 1 hour per day."},
+  {"id": "kubernetes-practical", "raw_request": "I need to become productive with Kubernetes for work in about 2 weeks, 2 hours a day. I already know Docker."},
+  {"id": "german-a1", "raw_request": "I want to learn German from zero to conversational A2 level."},
+  {"id": "statistics-for-ml", "raw_request": "I know calculus and linear algebra but no statistics. I want enough statistics to understand ML papers."},
+  {"id": "os-concepts", "raw_request": "Explain operating systems to me from the ground up — processes, memory, scheduling — I'm a self-taught programmer with no CS degree."},
+  {"id": "rag-systems", "raw_request": "I already build basic LLM apps. I want to deeply understand RAG systems: retrieval, chunking, evaluation, and go build one myself."},
+  {"id": "no-constraints", "raw_request": "Teach me about compilers."}
+]
